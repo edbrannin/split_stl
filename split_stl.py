@@ -48,7 +48,8 @@ class FacetGroup(object):
 
 
 @click.command()
-def main(filename="HippoLeg.stl"):
+@click.argument("filename")
+def main(filename):
     with open(filename) as f:
         data = stl.read_ascii_file(f)
         print len(data.facets)
