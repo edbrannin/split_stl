@@ -5,3 +5,8 @@ Usage:
     * Splits up an STL file into groups that don't share vertices.
 3. `python split_stl.py join these_were_actually.stl the_same_part.stl -o combined.stl
     * Prints to stdout if you omit the "-o combined.stl" argument
+
+
+TODO:
+
+* Optionally join by bounding-box after mesh-joins (also optionally limit iterations here)
